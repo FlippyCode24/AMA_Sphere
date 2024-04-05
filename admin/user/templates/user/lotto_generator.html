@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotto Numbers Generator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('girl.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            color: #fff; /* Set text color to white */
+        }
+    
+        .center-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        #moneyIndicator {
+            color: #fff; /* Specific color for money indicator */
+        }
+
+        .list-group-item {
+            left: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent; /* Make list-group-item background transparent */
+        }
+
+        
+        .list-group-item.black-text {
+            color: #000;
+        }
+        </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="row center-div">
+            <div class="col-md-6">
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item" id="num1"></li>
+                    <li class="list-group-item" id="num2"></li>
+                    <li class="list-group-item" id="num3"></li>
+                    <li class="list-group-item" id="num4"></li>
+                    <li class="list-group-item" id="num5"></li>
+                    <li class="list-group-item" id="num6"></li>
+                </ul>
+                <br>
+                <div class="text-center">
+                    <button type="button" id="rollButton">Generate Numbers</button>
+                </div>
+                <div class="text-center mt-3">
+                    <label for="betAmount">Enter your bet amount:</label>
+                    <input type="number" id="betAmount" placeholder="Enter amount">
+                </div>
+                <div class="text-center mt-3">
+                    <label for="userNumbers">Select your numbers (1-60):</label><br>
+                    <input type="number" id="num1Input" min="1" max="60" placeholder="Number 1">
+                    <input type="number" id="num2Input" min="1" max="60" placeholder="Number 2">
+                    <input type="number" id="num3Input" min="1" max="60" placeholder="Number 3">
+                    <input type="number" id="num4Input" min="1" max="60" placeholder="Number 4">
+                    <input type="number" id="num5Input" min="1" max="60" placeholder="Number 5">
+                    <input type="number" id="num6Input" min="1" max="60" placeholder="Number 6">
+                </div>
+                <div class="text-center mt-3">
+                    <button type="button" id="placeButton">Place Bet</button>
+                </div>
+                <div class="text-center mt-3">
+                    <p id="moneyIndicator">Money: $1000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="lotto_generator.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotto Numbers Generator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+   <!-- STYLESHEET -->
+   <style>
+    body{
+        background-image: url(girl.jpg);
+        background-repeat: no-repeat;
+    }
+.form-container {
+    position: relative; /* Position relative for absolute positioning of the box */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 20px; /* Adjust padding as needed */
+}
+
+.form-box {
+    border: 2px solid #000; /* Black border */
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.message{
+
+position: sticky;
+top:0; left: 0; right:0;
+padding: 15px 10px;
+background: #fff;
+text-align: center;
+z-index: 1000;
+box-shadow: var(--box-shadow);
+
+}
+
+form {
+    text-align: center; /* Center align the form elements */
+    max-width: 400px; /* Adjust max-width as needed */
+    width: 100%;
+}
+
+.box {
+    margin-bottom: 10px; /* Adjust margin as needed */
+    width: 100%;
+    padding: 10px;
+}
+
+.btn {
+    background-color: #007bff; /* Adjust button styles as needed */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Adjust hover color as needed */
+}
+
+p {
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+   </style>
+
+</head>
+<body>
+
+    <div class="form-container">
+
+    <form action="" method="post">
+        <h3>Register Now</h3>
+        <input type="text" name="name" required placeholder="enter username" class="box">
+        <input type="email" name="email" required placeholder="enter email" class="box">
+        <input type="password" name="password" required placeholder="enter password" class="box">
+        <input type="password" name="cpassword" required placeholder="confirm password" class="box">
+        <input type="submit" name="submit" class="btn"  value="register now">
+        <p>Already have an Account?</p> <a href="login.php">login now</a>
+    </form>
+
+    </div>
+
+
+</body>
+</html>
